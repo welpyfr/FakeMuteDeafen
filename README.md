@@ -13,9 +13,6 @@ Toggles are also available in Settings → Plugins → FakeMuteDeafen, and each 
 shows a toast. Turning Fake Mute off while Fake Deafen is on clears both
 ("Fake mute & deafen off").
 
-<!-- TODO: add a screenshot of the user panel with the two buttons here:
-![preview](preview.png) -->
-
 ## How it works
 
 Outgoing gateway `VOICE_STATE_UPDATE` (op 4) messages are intercepted and their
