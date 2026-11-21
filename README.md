@@ -2,6 +2,8 @@
 
 A community userplugin for [Equicord](https://github.com/Equicord/Equicord).
 
+![preview](preview.png)
+
 **Look muted or deafened to others while you can still talk and hear.**
 
 Adds two buttons next to your mute/deafen buttons in the bottom-left user panel:
@@ -44,7 +46,7 @@ prebuilt install.
 2. Put this plugin into `src/userplugins/fakeMuteDeafen/`:
 
    ```sh
-   git clone https://github.com/<you>/fakeMuteDeafen.git src/userplugins/fakeMuteDeafen
+   git clone https://github.com/welpyfr/FakeMuteDeafen.git src/userplugins/fakeMuteDeafen
    ```
 
    (or download the repo as a zip and unpack it into that folder)
@@ -56,8 +58,9 @@ prebuilt install.
    pnpm inject
    ```
 
-4. Start Discord → Settings → Plugins → enable **FakeMuteDeafen**.
-   The `UserAreaAPI` dependency is enabled automatically.
+4. Start Discord → Settings → Plugins → enable **FakeMuteDeafen** → **restart
+   Discord once more**. The restart is required: plugins that patch the UI are
+   only fully activated after it — without it the panel buttons won't appear.
 
 > This plugin uses Equicord's `UserAreaAPI`, so it works on Equicord builds.
 > On plain Vencord it would need the button patch ported first.
