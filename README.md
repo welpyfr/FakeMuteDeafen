@@ -30,7 +30,37 @@ Details:
   so the server picks up the change instantly.
 - When the plugin is disabled, your real voice state is restored.
 
-## Installation
+## Easy install (script)
+
+Installs the plugin as an additional userplugin: the script clones Equicord's
+source into `~/Equicord`, adds this plugin next to any other userplugins, builds
+everything and patches Discord. Requires [git](https://git-scm.com/downloads) and
+[Node.js](https://nodejs.org/) (pnpm is enabled automatically).
+
+**Windows** (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File install.ps1
+```
+
+**Linux / macOS:**
+
+```sh
+bash install.sh
+```
+
+When the installer menu appears, keep **Stable** selected and press Enter.
+Start Discord, enable the plugin in Settings → Plugins, then fully restart
+Discord once more — the panel buttons appear after this restart.
+
+To update the plugin later, just run the script again — it pulls the latest
+Equicord and plugin versions and rebuilds.
+
+If you don't want to build anything, use the ready-made `equicord.asar` from the
+[Releases](https://github.com/welpyfr/FakeMuteDeafen/releases) page instead
+(see the guide inside the zip).
+
+## Manual installation (build from source)
 
 Equicord userplugins require a source build — they can't be hot-loaded into a
 prebuilt install.
